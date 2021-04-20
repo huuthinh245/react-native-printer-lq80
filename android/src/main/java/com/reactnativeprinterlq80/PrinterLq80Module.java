@@ -159,6 +159,7 @@ public class PrinterLq80Module extends ReactContextBaseJavaModule implements Lif
           bmp = resizeImage(bmp,size,size, "cover",true);
           if(bmp == null) {
             Toast.makeText(context, "bitmap null",Toast.LENGTH_LONG).show();
+            return;
           }
           int height = bmp.getHeight()/8;
           if(HPRTPrinterHelper.printAreaSize("100",""+ height)==-1){
