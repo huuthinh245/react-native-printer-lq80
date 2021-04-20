@@ -1,7 +1,10 @@
 import { NativeModules } from 'react-native';
 
 type PrinterLq80Type = {
-  multiply(a: number, b: number): Promise<number>;
+  init(): void;
+  connectUSB(): Promise<boolean>;
+  printImage(base64: string): void;
+  getPrintStatus(): void
 };
 
 const { PrinterLq80 } = NativeModules;
