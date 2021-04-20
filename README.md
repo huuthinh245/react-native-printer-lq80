@@ -15,7 +15,7 @@ import PrinterLq80 from "react-native-printer-lq80";
 
 // ...
 
-const result = await PrinterLq80.multiply(3, 7);
+PrinterLq80.printImage(base64)
 ```
 
 ## Contributing
